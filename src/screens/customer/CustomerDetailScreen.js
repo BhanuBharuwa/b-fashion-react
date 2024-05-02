@@ -521,6 +521,7 @@ const CustomerDetailScreen = ({navigation, route}) => {
         await AsyncStorage.setItem('customer_mobile', phone);
         await AsyncStorage.setItem('customer_name', customerData.name);
         await AsyncStorage.setItem('carts', JSON.stringify([]));
+        setUri('');
         //  const res = await MapmyIndiaIntouch.getCurrentLocationUpdate();
       } else {
         setStart(false);
